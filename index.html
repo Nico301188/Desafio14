@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Desafio 14</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="d-form">
+            <form id="datos" onsubmit="onSubmitContact(event)">
+                <div class="d-name">
+                    <div class="name">
+                        <label for="fistName">Primer Nombre:</label>   
+                        <input id="fistName" name="fistName" type="text"  oninput="onChangeName()">
+                        <span id="fistName-error" class="inputerror"></span>
+                    </div>
+                    <div class="surname">
+                        <label for="surName">Primer Apellido:</label>
+                        <input id="surName" name="surName" type="text" required oninput="onChangeSurName()">
+                        <span id="surname-error" class="inputerror"></span>
+                    </div>
+                </div>
+                <div class="d-document">
+                    <div class="d-field">
+                        <p>Tipo de documento</p>
+                        <fieldset class="field-flex">
+                            <input type="radio" name="docTip" id="docTipD" value="DNI">
+                            <label for="docTipD">DNI</label>
+                            <input type="radio" name="docTip" id="docTipC" value="CUIL">
+                            <label for="docTipC">CUIL</label>
+                        </fieldset>
+                    </div>
+                    <div class="document">
+                        <label for="document">Numero de documento</label>
+                        <input id="document" name="document" type="text" oninput="onChangeDocument()">
+                        <span id="document-error" class="inputerror"></span>
+                    </div>
+                </div>
+                <div class="address">
+                    <label for="address">Direccion:</label>
+                    <input id="address" name="address" type="text" oninput="onChangeAdres()">
+                    <span id="address-error" class="inputerror"></span>
+                </div>
+                <div class="d-button">
+                    <button type="submit" >Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+<script src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+
+* {
+    font-family: "Rubik Beastly", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 16px;
+}
+body{
+    background-image: url('https://besthqwallpapers.com/Uploads/21-2-2020/122696/thumb2-material-design-blue-geometric-shapes-geometry-lines-creative.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0.5rem 0 0 0;
+    background-color: transparent;
+    /* margin: 0 1rem; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(233, 3, 3);
+    font-size: 0.8rem;
+}
+
+fieldset,
+legend {
+    border: none;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+label {
+    margin: 0;
+}
+
+input {
+    margin-right: 0.5rem;
+    align-content: end;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 1rem;
+}
+
+p {
+    margin: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-form {
+    display: flex;
+
+    /* flex-wrap: wrap; */
+}
+
+.name,
+.surname,
+.document,
+.address,
+.d-field,
+.d-button {
+    display: grid;
+    padding: 1rem 0;
+    width: auto;
+}
+
+.d-name,
+.d-document {
+    display: block;
+width: 100%;
+}
+
+@media screen and (min-width: 425px) {
+
+    .name,
+    .surname,
+    .document,
+    .d-field {
+        display: flex;
+        padding: 0 1rem;
+        align-items: center;
+        width: auto;
+    }
+
+    .address {
+        display: block;
+        padding: 0 1rem;
+        width: 100%;
+    }
+    .address input {
+        /* display: block;
+        padding: 0 1rem; */
+        width: 90%;
+    }
+    .name input{
+        width: 90%;
+    }
+    .surname input{
+        width: 90%;
+    }
+
+    label {
+        margin: 1rem;
+    }
+
+    .field-flex {
+        display: flex;
+        align-items: center;
+    }
+
+    input {
+        display: flex;
+        padding: 0;
+        margin: 0 1rem;
+        justify-content: flex-end;
+    }
+
+    fieldset,
+    legend {
+        display: flex;
+        border: none;
+        padding: 0.5rem 0;
+        margin: 0;
+    }
+
+    .d-name,
+    .d-document {
+        display: block;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .name,
+    .surname,
+    .document,
+    .address,
+    .d-field {
+        display: grid;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .d-name,
+    .d-document {
+        display: flex;
+    }
+
+    .field-flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .field-flex input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    fieldset,
+    legend {
+        display: flex;
+        border: none;
+        padding: 0.5rem 0;
+        margin: 0;
+    }
+}
